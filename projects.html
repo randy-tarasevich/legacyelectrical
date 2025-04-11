@@ -24,162 +24,359 @@
     <title>Randy Tarasevich</title>
   </head>
   <body>
-    <div class="container-fluid p-0 mb-4 border border-danger">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          <a class="navbar-brand" href="#">Legacy Electrical</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+<div class="container-fluid bg-dark text-white py-5 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 fw-bold">Our Projects</h1>
+        <p class="lead">Delivering quality electrical solutions for residential and commercial properties</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Projects Section -->
+<div class="container mb-5">
+  <div class="row mb-4">
+    <div class="col-12 text-center">
+      <h2 class="fw-bold">Featured Projects</h2>
+      <p class="text-muted">Take a look at some of our recent work</p>
+    </div>
+  </div>
+
+  <!-- Project Cards Row 1 -->
+  <div class="row g-4 mb-5">
+    <!-- Project 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Modern Home Electrical Upgrade">
+        <div class="card-body">
+          <h5 class="card-title">Modern Home Electrical Upgrade</h5>
+          <span class="badge bg-primary mb-2">Residential</span>
+          <p class="card-text">Complete electrical system upgrade for a 3,200 sq ft home in Oakridge neighborhood. Included panel upgrade, smart home integration, and dedicated circuits for home office equipment.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+            View Details
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services.html">Residential</a></li>
-                  <li><a class="dropdown-item" href="services.html">Commercial</a></li>
-                </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="projects.html">Projects</a>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </li>
-              </li>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Downtown Commercial Renovation">
+        <div class="card-body">
+          <h5 class="card-title">Downtown Commercial Renovation</h5>
+          <span class="badge bg-success mb-2">Commercial</span>
+          <p class="card-text">Electrical renovation for a 4-story office building downtown. Updated lighting systems, energy-efficient wiring, and improved network infrastructure for multiple business tenants.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Restaurant Lighting Installation">
+        <div class="card-body">
+          <h5 class="card-title">Restaurant Lighting Installation</h5>
+          <span class="badge bg-success mb-2">Commercial</span>
+          <p class="card-text">Custom lighting design and installation for a new farm-to-table restaurant. Included pendant fixtures, recessed lighting, and programmable mood lighting systems with energy-efficient LED fixtures.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Cards Row 2 -->
+  <div class="row g-4">
+    <!-- Project 4 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Solar Panel Integration">
+        <div class="card-body">
+          <h5 class="card-title">Solar Panel Integration</h5>
+          <span class="badge bg-primary mb-2">Residential</span>
+          <p class="card-text">Full solar panel system integration for a custom-built home. Included electrical panel upgrades, battery backup installation, and smart monitoring systems for optimal energy usage.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Retail Store Electrical System">
+        <div class="card-body">
+          <h5 class="card-title">Retail Store Electrical System</h5>
+          <span class="badge bg-success mb-2">Commercial</span>
+          <p class="card-text">Complete electrical system design and installation for a new retail store in the Westside Shopping Center. Included custom lighting, security systems, and energy-efficient climate controls.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Home Theater Wiring">
+        <div class="card-body">
+          <h5 class="card-title">Home Theater Wiring</h5>
+          <span class="badge bg-primary mb-2">Residential</span>
+          <p class="card-text">Custom home theater electrical wiring and installation. Included dedicated circuits, concealed speaker wiring, structured cabling for audio-visual equipment, and automated lighting systems.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project6Modal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Process Section -->
+<div class="container-fluid bg-light py-5 mb-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold">Our Project Process</h2>
+        <p class="text-muted">How we bring your electrical projects to life</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Step 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 bg-transparent">
+          <div class="card-body text-center">
+            <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+              <i class="bi bi-chat-dots-fill fs-1"></i>
+            </div>
+            <h4 class="card-title">Consultation</h4>
+            <p class="card-text">We meet to understand your needs, assess your space, and discuss possible solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 bg-transparent">
+          <div class="card-body text-center">
+            <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+              <i class="bi bi-graph-up-arrow fs-1"></i>
+            </div>
+            <h4 class="card-title">Planning</h4>
+            <p class="card-text">We create a detailed plan including timeline, materials, and cost estimates for your approval.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 bg-transparent">
+          <div class="card-body text-center">
+            <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+              <i class="bi bi-tools fs-1"></i>
+            </div>
+            <h4 class="card-title">Implementation</h4>
+            <p class="card-text">Our skilled electricians complete the work efficiently with minimal disruption to your home or business.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 bg-transparent">
+          <div class="card-body text-center">
+            <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+              <i class="bi bi-check-circle-fill fs-1"></i>
+            </div>
+            <h4 class="card-title">Quality Assurance</h4>
+            <p class="card-text">We perform thorough testing and inspections to ensure everything meets our high standards and your satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container mb-5">
+  <div class="row mb-4">
+    <div class="col-12 text-center">
+      <h2 class="fw-bold">Client Testimonials</h2>
+      <p class="text-muted">What our clients say about our project work</p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- Testimonial 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex mb-3">
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="card-text fst-italic">"Legacy Electrical transformed our outdated electrical system into a modern, efficient setup. Their attention to detail and professional approach was impressive from start to finish."</p>
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <i class="bi bi-person-circle fs-1 text-secondary"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="mb-0">Michael Thompson</h6>
+              <small class="text-muted">Homeowner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex mb-3">
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="card-text fst-italic">"When we needed to update our restaurant's lighting system, Legacy Electrical understood exactly what we needed. They created a beautiful atmosphere that our customers consistently compliment."</p>
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <i class="bi bi-person-circle fs-1 text-secondary"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="mb-0">Sarah Johnson</h6>
+              <small class="text-muted">Restaurant Owner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex mb-3">
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="card-text fst-italic">"As a property developer, I need reliable contractors. Legacy Electrical has consistently delivered high-quality work on multiple commercial projects, always on time and within budget."</p>
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <i class="bi bi-person-circle fs-1 text-secondary"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="mb-0">David Wilson</h6>
+              <small class="text-muted">Property Developer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="container-fluid bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold mb-3">Ready to Start Your Project?</h2>
+        <p class="lead mb-4">Contact us today for a consultation and free quote on your electrical needs</p>
+        <a href="contact.html" class="btn btn-primary btn-lg px-4">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modals -->
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Modern Home Electrical Upgrade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Modern Home Electrical Upgrade">
+          </div>
+          <div class="col-md-6">
+            <h6 class="fw-bold">Project Details</h6>
+            <ul class="list-unstyled">
+              <li><strong>Location:</strong> Oakridge Neighborhood</li>
+              <li><strong>Type:</strong> Residential</li>
+              <li><strong>Duration:</strong> 2 weeks</li>
+              <li><strong>Year:</strong> 2023</li>
+            </ul>
+            <h6 class="fw-bold mt-3">Services Provided</h6>
+            <ul>
+              <li>200-amp panel upgrade</li>
+              <li>Smart home integration</li>
+              <li>Dedicated home office circuits</li>
+              <li>Whole-house surge protection</li>
+              <li>Lighting automation</li>
             </ul>
           </div>
         </div>
-      </nav>
+        <hr>
+        <h6 class="fw-bold">Project Description</h6>
+        <p>This complete electrical system upgrade transformed a 1990s home into a modern, energy-efficient smart home. The homeowners needed additional capacity for their growing family and home office needs, along with the reliability of a fully updated electrical system.</p>
+        <p>Our team installed a new 200-amp service panel, added dedicated circuits for home office equipment, and integrated a comprehensive smart home system that allows the homeowners to control lighting, climate, and security from their mobile devices.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="container-fluid">
-      <h1>Service 1</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-      <h1>Service 2</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-      <h1>Service 3</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-      <h1>Service 4</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-      <h1>Service 5</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-      <h1 id="service6">Service 6</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        quae officia pariatur natus dignissimos suscipit aliquid ducimus quasi,
-        quam eaque dolor commodi. Distinctio, inventore suscipit nihil
-        voluptates quibusdam corporis quod?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis
-        quod?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem quae officia pariatur natus dignissimos suscipit aliquid
-        ducimus quasi, quam eaque dolor commodi. Distinctio, inventore suscipit
-        nihil voluptates quibusdam corporis quod? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Exercitationem quae officia pariatur natus
-        dignissimos suscipit aliquid ducimus quasi, quam eaque dolor commodi.
-        Distinctio, inventore suscipit nihil voluptates quibusdam corporis quod?
-      </p>
-    </div>
-    <script src="script.js"></script>
+<!-- Additional modals would be similarly structured for each project -->
+
+    <div id="footer"></div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
