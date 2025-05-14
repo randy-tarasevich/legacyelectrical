@@ -1,2 +1,2 @@
 # legacyelectrical
-Basic multi-page website for an electrical contracting business the utilizes the Bootstrap framework.
+Basic multi-page website for an electrical contracting business utilizing the Bootstrap framework.
