@@ -1,7 +1,133 @@
-.card:hover {
-  transform: scale(1.05);
+/* Custom CSS to enhance Bootstrap styling */
+
+/* Font improvements */
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Base card styles */
 .card {
-  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Default hover effect for all cards */
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Special hover-zoom effect - make this rule more specific to override others */
+.card.hover-zoom:hover {
+  transform: scale(
+    1.05
+  ) !important; /* Added !important to ensure this rule takes precedence */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature icon styling */
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover .feature-icon {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+}
+
+/* Section spacing */
+section {
+  padding: 4rem 0;
+}
+
+/* Hero image overlay */
+.hero-section .position-relative::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.hero-section .position-absolute {
+  z-index: 2;
+}
+
+/* Improved buttons */
+.btn {
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-warning {
+  background-color: amber;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Footer styling */
+footer a {
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Emergency banner pulse effect */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
+}
+
+.emergency-section .btn {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1.display-3 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
 }
