@@ -2,6 +2,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Get the form element
   const form = document.getElementById('contact-form')
+  // Get the form errors container
+  const formErrors = document.getElementById('form-errors')
+
+  // Store the original form action and redirect
+  const formAction = form.action
+  const redirectUrl = form.querySelector('input[name="redirect"]').value
 
   // Add submit event listener to the form
   form.addEventListener('submit', function (event) {
@@ -49,9 +55,65 @@ document.addEventListener('DOMContentLoaded', function () {
       message.nextElementSibling.style.display = 'none'
     }
 
-    // If all validations pass, submit the form
+    // If all validations pass, show success message and submit the form
     if (isValid) {
-      form.submit()
+      try {
+        // Show success message
+        const successMessage = document.createElement('div')
+        successMessage.className = 'alert alert-success mt-3'
+        successMessage.role = 'alert'
+        successMessage.textContent =
+          'Thank you! The form has been submitted successfully. We will reply to you soon!'
+
+        formErrors.innerHTML = ''
+        formErrors.appendChild(successMessage)
+
+        // Temporarily modify the form to prevent redirect
+        form.querySelector('input[name="redirect"]').value = ''
+
+        // Submit the form using the native form submission
+        // Use a timeout to allow the success message to be seen
+        setTimeout(() => {
+          // Create a hidden iframe for submission
+          const iframe = document.createElement('iframe')
+          iframe.name = 'hidden_iframe'
+          iframe.style.display = 'none'
+          document.body.appendChild(iframe)
+
+          // Set the form to target the iframe
+          form.target = 'hidden_iframe'
+
+          // Submit the form
+          form.submit()
+
+          // Reset the form after submission
+          setTimeout(() => {
+            form.reset()
+
+            // Optional - redirect after a delay
+            if (redirectUrl) {
+              setTimeout(() => {
+                window.location.href = redirectUrl
+              }, 1000)
+            }
+          }, 500)
+        }, 1000)
+      } catch (error) {
+        console.error('Error:', error)
+
+        // Show error message
+        const errorMessage = document.createElement('div')
+        errorMessage.className = 'alert alert-danger mt-3'
+        errorMessage.role = 'alert'
+        errorMessage.textContent = 'Form submission failed!'
+
+        formErrors.innerHTML = ''
+        formErrors.appendChild(errorMessage)
+
+        // Restore original form attributes
+        form.action = formAction
+        form.querySelector('input[name="redirect"]').value = redirectUrl
+      }
     }
   })
 
